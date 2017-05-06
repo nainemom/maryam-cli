@@ -1,0 +1,39 @@
+{
+  "name": "maryam-cli",
+  "version": "0.1.0",
+  "description": "An cli tool for persian users.",
+  "main": "dist/index.js",
+  "bin": {
+    "maryam": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "babel src --out-dir dist",
+    "dev": "babel src --out-dir dist --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nainemom/maryam-cli.git"
+  },
+  "keywords": [
+    "persian",
+    "cli",
+    "maryam"
+  ],
+  "author": "nainemom <nainemom@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nainemom/maryam-cli/issues"
+  },
+  "homepage": "https://github.com/nainemom/maryam-cli#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "google-translate-api": "git+https://github.com/arthurlacoste/google-translate-api.git",
+    "log-update": "^2.0.0"
+  }
+}
