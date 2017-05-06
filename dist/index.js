@@ -22,7 +22,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var modules = {
-  'translate': require('./modules/translate.js')
+  'translate': require('./modules/translate.js'),
+  'fixsub': require('./modules/fixsub.js')
 };
 
 if (process.argv.length > 2) {
