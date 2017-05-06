@@ -1,6 +1,6 @@
 {
   "name": "maryam-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An cli tool for persian users.",
   "main": "dist/index.js",
   "bin": {
@@ -34,6 +34,7 @@
   "dependencies": {
     "colors": "^1.1.2",
     "google-translate-api": "git+https://github.com/arthurlacoste/google-translate-api.git",
+    "iconv": "^2.2.3",
     "log-update": "^2.0.0"
   }
 }
