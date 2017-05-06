@@ -1,6 +1,6 @@
 import logUpdate from 'log-update';
 import colors from 'colors';
-export default {
+module.exports = {
   _spinner: null,
   spinner(set = false) {
     if (set) {

@@ -1,4 +1,5 @@
-import helper from '../helper.js';
+import path from 'path';
+const helper = require(path.join(__dirname, '../helper.js'));
 import translate from 'google-translate-api';
 module.exports = function (txt = '') {
   txt = txt.trim();

@@ -1,8 +1,9 @@
 import fs from 'fs';
-const pkg = JSON.parse(fs.readFileSync('package.json'));
-const help = fs.readFileSync('src/help.txt', { encoding: 'utf8' });
+import path from 'path';
+const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')));
+const help = fs.readFileSync(path.join(__dirname, 'help.js'), { encoding: 'utf8' });
 
-export default {
+module.exports = {
   version: pkg.version,
   help: help,
   badRequest(command) {

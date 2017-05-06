@@ -1,17 +1,18 @@
 #!/usr/bin/env node
-import helper from './helper.js';
 import fs from 'fs';
 import path from 'path';
-import info from './info.js';
+const helper = require(path.join(__dirname, 'helper.js'));
+const info = require(path.join(__dirname, 'info.js'));
+
 const modules = {
-  'translate': require('./modules/translate.js'),
-  'fixsub': require('./modules/fixsub.js')
+  'translate': require(path.join(__dirname, 'modules/translate.js')),
+  'fixsub': require(path.join(__dirname, 'modules/fixsub.js'))
 }
 
 if (process.argv.length > 2) {
   const moduleName = process.argv[2];
   if (['--version', '-v'].indexOf(moduleName) > -1) {
-    helper.output(info.version); 
+    helper.output(info.version);
   }
   else if (['--help', '-h'].indexOf(moduleName) > -1) {
     helper.output(info.help);
@@ -20,6 +21,6 @@ if (process.argv.length > 2) {
     helper.output(info.badRequest(moduleName));
   }
   else {
-    modules[moduleName](...process.argv.slice(3)); 
+    modules[moduleName](...process.argv.slice(3));
   }
 }

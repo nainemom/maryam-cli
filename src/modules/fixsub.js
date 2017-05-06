@@ -1,5 +1,5 @@
-import helper from '../helper.js';
 import path from 'path';
+const helper = require(path.join(__dirname, '../helper.js'));
 import fs from 'fs';
 import Iconv from 'iconv';
 module.exports = function (src = null, dst = null) {
