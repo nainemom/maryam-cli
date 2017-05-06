@@ -4,7 +4,8 @@ import fs from 'fs';
 import path from 'path';
 import info from './info.js';
 const modules = {
-  'translate': require('./modules/translate.js')
+  'translate': require('./modules/translate.js'),
+  'fixsub': require('./modules/fixsub.js')
 }
 
 if (process.argv.length > 2) {
