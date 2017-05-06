@@ -34,3 +34,21 @@ maryam translate دوست
 maryam translate "سلام حالت خوبه؟"
 # OK: Hello are you feeling good?
 ```
+
+
+### fixsub
+> Fix persian subtitles encoding.
+
+```bash
+maryam fixsub <src> [<dst>]
+```
+
+#### Examples
+
+```bash
+maryam fixsub ./mr-robot-s01e01.srt ./mr-robot-s01e01.fixed.srt 
+# OK: File './mr-robot-s01e01.fixed.srt' saved!
+
+maryam fixsub ./sherlock-s02e02.srt
+# OK: File './sherlock-s02e02.srt' saved!
+```
