@@ -1,9 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 var _logUpdate = require('log-update');
 
 var _logUpdate2 = _interopRequireDefault(_logUpdate);
@@ -14,7 +10,7 @@ var _colors2 = _interopRequireDefault(_colors);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
+module.exports = {
   _spinner: null,
   spinner: function spinner() {
     var set = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
