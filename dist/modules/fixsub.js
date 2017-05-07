@@ -24,7 +24,7 @@ module.exports = function () {
   try {
     var content = _fs2.default.readFileSync(src);
     var iconv = new _iconv2.default.Iconv('WINDOWS-1256', 'UTF-8');
-    var result = iconv.convert(content).toString('utf8');
+    var result = iconv.convert(content).toString('utf8').replace(/<\/?[^>]+(>|$)/g, "");
     var saveDir = dst ? dst : src;
     _fs2.default.writeFileSync(saveDir, result, 'UTF-8');
     helper.spinner(false);
