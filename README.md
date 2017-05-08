@@ -1,4 +1,4 @@
-# Framevuerk
+# Maryam CLI
 
 > An simple cli tool for persian users. Easy as calling maryam!
 
