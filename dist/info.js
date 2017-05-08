@@ -11,7 +11,7 @@ var _path2 = _interopRequireDefault(_path);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var pkg = JSON.parse(_fs2.default.readFileSync(_path2.default.join(__dirname, '../package.json')));
-var help = _fs2.default.readFileSync(_path2.default.join(__dirname, 'help.js'), { encoding: 'utf8' });
+var help = require(_path2.default.join(__dirname, 'help.js'));
 
 module.exports = {
   version: pkg.version,
