@@ -1,7 +1,7 @@
 {
   "name": "maryam-cli",
   "version": "0.3.0",
-  "description": "An cli tool for persian users.",
+  "description": "A cli tool for persian users.",
   "main": "dist/index.js",
   "bin": {
     "maryam": "dist/index.js"
