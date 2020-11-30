@@ -6,7 +6,8 @@ const info = require(path.join(__dirname, 'info.js'));
 
 const modules = {
   'translate': require(path.join(__dirname, 'modules/translate.js')),
-  'fixsub': require(path.join(__dirname, 'modules/fixsub.js'))
+  'fixsub': require(path.join(__dirname, 'modules/fixsub.js')),
+  'renamesubs': require(path.join(__dirname, 'modules/renamesubs.js'))
 }
 
 if (process.argv.length > 2) {

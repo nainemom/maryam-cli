@@ -52,3 +52,36 @@ maryam fixsub ./mr-robot-s01e01.srt ./mr-robot-s01e01.fixed.srt
 maryam fixsub ./sherlock-s02e02.srt
 # OK: File './sherlock-s02e02.srt' saved!
 ```
+
+### renamesubs
+> Sync subtitle file name with movie file name via levenshtein comparison.
+
+```bash
+maryam renamesubs <srcPath>
+```
+
+#### Examples
+
+```bash
+maryam renamesubs ./mr-robot/S01
+# OK: Done!
+
+
+# Before:
+#   mr-robot-s01-e01.mkv
+#   mr-robot-s01-e02.mkv
+#   mr-robot-s01-e03.mp4
+#   e01.srt
+#   E02.srt
+#   MrRobotS01E03.srt
+#   ...
+#
+# After:
+#   mr-robot-s01-e01.mkv
+#   mr-robot-s01-e01.srt
+#   mr-robot-s01-e02.mkv
+#   mr-robot-s01-e02.srt
+#   mr-robot-s01-e03.mp4
+#   mr-robot-s01-e03.srt
+#   ...
+```
