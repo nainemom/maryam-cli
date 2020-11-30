@@ -18,7 +18,8 @@ var info = require(_path2.default.join(__dirname, 'info.js'));
 
 var modules = {
   'translate': require(_path2.default.join(__dirname, 'modules/translate.js')),
-  'fixsub': require(_path2.default.join(__dirname, 'modules/fixsub.js'))
+  'fixsub': require(_path2.default.join(__dirname, 'modules/fixsub.js')),
+  'renamesubs': require(_path2.default.join(__dirname, 'modules/renamesubs.js'))
 };
 
 if (process.argv.length > 2) {
